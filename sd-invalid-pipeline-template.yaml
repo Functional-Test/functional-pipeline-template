@@ -1,4 +1,5 @@
-name: screwdriver-cd-test/test-pipeline-template
+namespace: screwdriver-cd-test
+name: test-pipeline-template
 version: '1.0'
 maintainer: test@example.com
 config:
