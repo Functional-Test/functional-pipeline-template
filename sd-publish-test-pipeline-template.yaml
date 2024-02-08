@@ -7,11 +7,8 @@ config:
   shared:
     image: node:18
     environment:
-      KEYNAME: value
-    secrets:
-      - NPM_TOKEN
+      FOO: bar
   jobs:
     main:
       steps:
-        - init: npm install
-        - test: npm test
+        - test: echo $FOO
